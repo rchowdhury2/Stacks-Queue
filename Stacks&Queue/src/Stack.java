@@ -1,7 +1,9 @@
 
 public class Stack {
 
-	public void push{
+	public void push{	
+	}
+	public void pop{
 		
 	}
 }
