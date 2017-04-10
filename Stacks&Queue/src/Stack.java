@@ -1,3 +1,8 @@
+/* Created by Rayhan Chowdhury 
+ * 4/9/2017
+ * Lab: Wed 10:25
+ */
+
 public class Stack {
 	private static class Node{
 		private String data;

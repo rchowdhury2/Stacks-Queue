@@ -1,3 +1,7 @@
+/* Created by Rayhan Chowdhury 
+ * 4/9/2017
+ * Lab: Wed 10:25
+ */
 
 public class Main {
 
@@ -5,8 +9,7 @@ public class Main {
 		Queue queue = new Queue();
 		Stack stack = new Stack();
 		Stack stack1 = new Stack();
-		
-		//Integer.parseInt("2")
+	
 		System.out.println("This is to test push and pop for stack");
 		System.out.println(" ");
 		stack.push("1");
