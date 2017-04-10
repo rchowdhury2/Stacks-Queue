@@ -1,49 +1,53 @@
-
 public class Queue {
 	private static class Node{
-		private int data;
+		private String data;
 		private Node next;
 		
-		private Node(int data){
+		private Node(String data){
 			this.data = data;
 		}
-
-		private Node getNext(){
-			return next;
-		}
-		
-		private int Data(){
+		public String Data(){
 			return data;
 		}
-		
-		private void setData(int data) {
-			this.data = data;
-		}
 	}
+
 	private Node head;
 	private Node tail;
 	
 	public boolean isEmpty(){
 		return head == null;
 	}
-	public int peek(){
+	public String peek(){
 		return head.data;
 	}
-	public void add(int data){
+	public void enqueue(String data){ 
 		Node node = new Node(data);
 		if (tail != null){
 			tail.next = node;
 		}
+		tail = node;
+		if (head == null){
+			head = node;
+		}
 	}
-	public int remove(){
-		int data = tail.data;
+	public String dequeue(){
+		String data = tail.data;
 		head = head.next;
 		if (head == null){
 			tail = null;
 		}
 		return data;
 		}
+	
+	public void print(){
+		Node current = head;
+		while(current != null){
+			System.out.println(current.Data());
+			current = current.next;
+		}
 	}
-
 }
+
+	
+
 
